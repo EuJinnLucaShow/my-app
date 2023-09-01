@@ -20,6 +20,7 @@ function Home({ navigation }) {
         title="Go to Profile"        
         onPress={() => navigation.navigate('Profile')}
       />
+      <Text>{ }</Text>
       <Button
         title="Go to Settings"        
         onPress={() => navigation.navigate('Settings')}
@@ -44,7 +45,7 @@ function HomeTabs() {
         },
       }}
     >
-      <Tab.Screen name="HomeTabs" component={Home} />
+      <Tab.Screen name="Home" component={Home} />
       <Tab.Screen name="Feed" component={EmptyScreen} />
       <Tab.Screen name="Notifications" component={EmptyScreen} />
     </Tab.Navigator>
